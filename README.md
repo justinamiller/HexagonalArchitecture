@@ -23,3 +23,5 @@ With these three main types of objects, we are able to define business logic wit
 
  * Data Sources are adapters to different storage implementations. A data source might be an adapter to a SQL database (an Active Record class in Rails or JPA in Java), an elastic search adapter, REST API, or even an adapter to something simple such as a CSV file or a Hash. A data source implements methods defined on the repository and stores the implementation of fetching and pushing the data.
  * Transport Layer can trigger an interactor to perform business logic. We treat it as an input for our system. The most common transport layer for microservices is the HTTP API Layer and a set of controllers that handle requests. By having business logic extracted into interactors, we are not coupled to a particular transport layer or controller implementation. Interactors can be triggered not only by a controller, but also by an event, a cron job, or from the command line.
+
+
